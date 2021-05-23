@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Fragment2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewBack_show"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/job" />
+
+        <ImageView
+            android:id="@+id/imageView_show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="111dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewBack_show"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/imageView_show"
+            android:gravity="center"
+            android:text="6d"
+            android:textColor="#A3323639"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_show"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="@color/lightblack"
+            android:textSize="22sp"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/companyName_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_show"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="@color/lightblack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/location_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyName_show"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:textColor="#A3323639"
+            android:textSize="14sp"
+             />
+        <TextView
+            android:id="@+id/description_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_show"
+            android:layout_marginTop="4dp"
+            android:gravity="start"
+            android:text="Hiring a Software Developer professional, the job description can feature: Researching, designing, implementing, and managing software programs. Testing and evaluating new programs. Identifying areas for modification in existing programs and subsequently developing these modifications."
+            android:textColor="@color/lightblack"
+            android:textSize="12sp"
+            android:typeface="sans" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/lightblack"
+                app:icon="@drawable/ic_outline_favorite_border_24"
+                android:layout_marginEnd="18dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Easy Aplly"
+                android:textAllCaps="false"
+                android:textColor="@color/lightblack"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="18dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

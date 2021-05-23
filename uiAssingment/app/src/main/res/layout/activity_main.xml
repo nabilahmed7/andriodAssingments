@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#36A33B"
+        android:isScrollContainer="true"
+        app:iconifiedByDefault="false" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/location_bar"
+        android:layout_below="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:background="#36A33B"
+        >
+
+        <Button
+            android:id="@+id/location_icon"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:backgroundTint="#36A33B"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            app:icon="@drawable/ic_baseline_location_on_24" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="City/Town, or Postcode"
+            android:lines="1"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/location_icon2"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="#36A33B"
+            android:outlineProvider="none"
+            app:icon= "@drawable/ic_baseline_location_searching_24"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="634dp"
+        android:layout_below="@+id/location_bar"
+        android:layout_marginTop="0dp"
+        android:background="@color/white" />
+
+
+
+
+</RelativeLayout>

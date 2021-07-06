@@ -11,7 +11,7 @@
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#36A33B"
+        android:background="#673AB7"
         android:isScrollContainer="true"
         app:iconifiedByDefault="false" />
 
@@ -27,7 +27,7 @@
         android:layout_margin="0dp"
         android:weightSum="5"
         android:orientation="horizontal"
-        android:background="#36A33B"
+        android:background="#673AB7"
         >
 
         <Button
@@ -35,7 +35,7 @@
             android:layout_width="99dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:backgroundTint="#36A33B"
+            android:background="#673AB7"
             android:elevation="0dp"
             android:outlineProvider="none"
             app:icon="@drawable/ic_baseline_location_on_24" />
@@ -46,6 +46,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:hint="City/Town, or Postcode"
+            android:textColorHint="@color/white"
             android:lines="1"
             />
 
@@ -55,7 +56,7 @@
             android:layout_width="78dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:backgroundTint="#36A33B"
+            android:background="#673AB7"
             android:outlineProvider="none"
             app:icon= "@drawable/ic_baseline_location_searching_24"
             />

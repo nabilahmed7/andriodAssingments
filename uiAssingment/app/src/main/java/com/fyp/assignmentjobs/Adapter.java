@@ -8,21 +8,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class NabilAdapter extends RecyclerView.Adapter<NabilAdapter.viewHolder> {
+public class Adapter extends RecyclerView.Adapter<Adapter.viewHolder> {
 
     private ArrayList<Items> cList = new ArrayList<>();
     Context context;
     ItemClickListener mListener;
 
 
-    public NabilAdapter(ArrayList<Items> cList, Context context, ItemClickListener mListener) {
+    public Adapter(ArrayList<Items> cList, Context context, ItemClickListener mListener) {
         this.cList = cList;
         this.context = context;
         this.mListener = mListener;
@@ -37,7 +36,7 @@ public class NabilAdapter extends RecyclerView.Adapter<NabilAdapter.viewHolder> 
 
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items, parent, false);
-        viewHolder viewHolder = new NabilAdapter.viewHolder(view);
+        viewHolder viewHolder = new Adapter.viewHolder(view);
         return viewHolder;
 
 
